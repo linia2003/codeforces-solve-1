@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    string s;
+    cin>>s;
+    int sum=0;
+    char start='a';
+
+    for(int i=0;i<s.length();i++) {
+        char c=s[i];
+        int d=abs(c-start);
+        if(d<=13) {
+            sum=sum+d;
+        } else {
+            sum=sum+(26-d);
+        }
+        start=c;
+    }
+
+    cout<<sum<<endl;
+}
