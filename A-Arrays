@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+        int a,b,x,y,i;
+        cin>>a >>b;
+        cin>>x >>y;
+        vector<int>A(a);
+        vector<int>B(b);
+      for(i=0;i<a;i++)
+      {
+          cin>>A[i];
+      }
+      for(i=0;i<b;i++)
+      {
+          cin>>B[i];
+      }
+    if(A[x-1]<B[b-y])
+        cout<<"YES"<<endl;
+    else
+        cout<<"NO"<<endl;
+
+}
