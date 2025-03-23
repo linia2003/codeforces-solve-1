@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,i;
+    cin>>n;
+    int c[10000];
+    for(i=0;i<n;i++)
+    {
+        cin>>c[i];
+    }
+    int s=0,d=0,l=0,r=n-1,card=0;
+while(l<=r)
+{
+    if(card%2==0)
+    {
+      if(c[l]>c[r])
+      {
+          s=s+c[l];
+          l++;
+      }
+      else
+      {
+          s=s+c[r];
+          r--;
+      }
+    }
+    else
+    {
+        if(c[l]>c[r])
+        {
+            d=d+c[l];
+            l++;
+        }
+        else
+        {
+            d=d+c[r];
+            r--;
+        }
+    }
+    card++;
+
+}
+cout<<s<<" "<<d<<endl;
+}
