@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    long long t,i,x,y;
+    cin>>t;
+    for(i=0;i<t;i++)
+    {
+        cin>>x >>y;
+        if(x-y==1)
+        {
+            cout<<"NO"<<endl;
+        }
+        else
+        {
+            cout<<"YES"<<endl;
+        }
+    }
+}
